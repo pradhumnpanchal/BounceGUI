@@ -10,6 +10,7 @@ public class Bounce {
         frame.add(BorderLayout.CENTER,pnl);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(340,340);
+        frame.setResizable(false);
         frame.setVisible(true);
 
         for(int z=0;z<250;z++){
