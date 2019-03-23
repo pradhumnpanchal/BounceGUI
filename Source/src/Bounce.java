@@ -17,7 +17,7 @@ public class Bounce {
             frame.repaint();
 
             try{
-                Thread.sleep(50);
+                Thread.sleep(20);
 
             }catch (Exception ex){
 
@@ -34,8 +34,8 @@ class Drawpanel extends JPanel {
         int red = (int)(Math.random()*255);
         int blue = (int)(Math.random()*255);
         int green = (int)(Math.random()*255);
-        Color grad = new Color(red, blue , green);
-
+        Color grad = new Color(255, 255 , 255); //made the ball white to make it colorful use var red blue green
+        g.fillRect(5,5,315,290);
         g.setColor(grad);
         g.fillOval(x, y, 50,50);
         x++;
