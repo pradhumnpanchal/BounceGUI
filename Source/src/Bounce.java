@@ -13,11 +13,11 @@ public class Bounce {
         frame.setResizable(false);
         frame.setVisible(true);
 
-        for(int z=0;z<250;z++){
+        for(int z = 0 ; z < 300*300 ; z++){
             frame.repaint();
 
             try{
-                Thread.sleep(20);
+                Thread.sleep(5);
 
             }catch (Exception ex){
 
@@ -29,7 +29,7 @@ public class Bounce {
     }
 }
 class Drawpanel extends JPanel {
-    static int x = 0, y = 0;
+    static int x = 0, y = 5;
     public void paintComponent(Graphics g){
         int red = (int)(Math.random()*255);
         int blue = (int)(Math.random()*255);
@@ -39,6 +39,8 @@ class Drawpanel extends JPanel {
         g.setColor(grad);
         g.fillOval(x, y, 50,50);
         x++;
-        y++;
+        if(x==270){
+        y += 5;
+        x = 0;}
     }
 }
