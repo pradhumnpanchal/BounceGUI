@@ -13,7 +13,7 @@ public class Bounce {
         frame.setResizable(false);
         frame.setVisible(true);
 
-        for(int z = 0 ; z < 300*300 ; z++){
+        for(int z = 0 ; z < 250*50 ; z++){
             frame.repaint();
 
             try{
