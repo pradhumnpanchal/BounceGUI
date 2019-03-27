@@ -43,7 +43,7 @@ class Drawpanel extends JPanel {
 
         x++;
         if(x==330){
-        y += 6;
+        y += 8;
         x = 0;}
     }
 }
