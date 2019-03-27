@@ -36,14 +36,14 @@ class Drawpanel extends JPanel {
         int green = (int)(Math.random()*255);
         Color grad = new Color(64, 198 , 219); //made the ball white to make it colorful use var red blue green
         g.fillRect(5,5,315,290);
-        g.setColor(new Color(255,255,255));
+        g.setColor(new Color(185,212,210));
         g.fillOval(x-3, y, 50,50);
         g.setColor(grad);
         g.fillOval(x, y, 50,50);
 
         x++;
-        if(x==270){
-        y += 5;
+        if(x==330){
+        y += 6;
         x = 0;}
     }
 }
