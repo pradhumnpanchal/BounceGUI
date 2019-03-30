@@ -31,9 +31,9 @@ public class Bounce {
 class Drawpanel extends JPanel {
     static int x = 0, y = 5;
     public void paintComponent(Graphics g){
-        int red = (int)(Math.random()*255);
-        int blue = (int)(Math.random()*255);
-        int green = (int)(Math.random()*255);
+//        int red = (int)(Math.random()*255);
+//        int blue = (int)(Math.random()*255);
+//        int green = (int)(Math.random()*255);
         Color grad = new Color(64, 198 , 219); //made the ball white to make it colorful use var red blue green
         g.fillRect(5,5,315,290);
         g.setColor(new Color(185,212,210));
