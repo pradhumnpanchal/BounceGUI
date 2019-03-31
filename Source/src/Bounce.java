@@ -3,6 +3,7 @@ import java.awt.*;
 
 public class Bounce {
     JFrame frame;
+    JLabel l;
 
     Bounce(){
         frame = new JFrame("Bounce");
@@ -13,7 +14,7 @@ public class Bounce {
         frame.setResizable(false);
         frame.setVisible(true);
 
-        for(int z = 0 ; z < 250*60 ; z++){
+        for(int z = 0 ; z < 319*32 ; z++){
             frame.repaint();
 
             try{
@@ -40,6 +41,7 @@ class Drawpanel extends JPanel {
         g.fillOval(x-3, y, 50,50);
         g.setColor(grad);
         g.fillOval(x, y, 50,50);
+        //g.drawString(x+" "+y,20,20);
 
         x++;
         if(x==330){
